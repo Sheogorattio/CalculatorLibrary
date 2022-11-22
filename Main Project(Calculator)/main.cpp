@@ -10,7 +10,7 @@ int main() {
 	HINSTANCE hInstLib = LoadLibrary(TEXT("CalculatorLibrary.dll"));
 
 	if (!hInstLib) {
-		cout << "Can`t load library DllTest.dll" << endl;
+		cout << "Can`t load library CalculatorLibrary.dll" << endl;
 		return 0;
 	}
 	fptr calculator = (fptr)GetProcAddress(hInstLib, "CalcBody");
